@@ -1,9 +1,7 @@
 <DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<title>SimpleChat Application</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="allusers.css">
 		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
 		<script
 		  src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -13,7 +11,7 @@
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
 		  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-		<script src="main.js"></script>
+		<script src="signed.js"></script>
 
 	</head>
 
@@ -21,16 +19,18 @@
 		<div class="top-space"></div>
 		<h1 class="title-text">SimpleChat</h1>
 		<div class="bottom-space"></div>
-		<div class="login-section">
-		<h1 class="login-title">Login</h1>
-		<p class="login-text">Email</p>
-		<input type="text" class="email-box input__field">
-		<p class="login-text">Password</p>
-		<input type="Password" class="password-box">
-		<div class="container-space"></div>
-		<br>
-		<button class="myButton" onclick="return">Login</button>
-		<a href="signup.html"><button class="signup-button myButton">Sign Up</button></a>
+
+		<!-- MAIN SECTION FOR THE PAGE -->
+		<div class="page-section">
+		
+		<h1 class="all-users-title">All Users</h1>
+		<p class="subtitle-text">Click on a user to start a chat with them!</p>
+		<div class="space-1"></div>
+		<!-- ALL USERS DATABASE SEARCH RESULT SHOW HERE-->
+		<p class="search-result"> </p>
+		<div class="space-2"></div>
+		
+		<button class="back-button myButton">Back</button>
 		</div>
 
 	</body>
